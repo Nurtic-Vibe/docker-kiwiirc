@@ -4,7 +4,7 @@ RUN ./kiwi build
 
 EXPOSE 7778
 
-ADD config.js ./kiwi/config.js
+ADD config.js ./config.js
 
 ENTRYPOINT ["./kiwi", "-f", "start"]
 CMD ["-c", "config.js"]
